@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+    http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
+    
+	<persistence-unit name="omdpPU" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>com.omdp.webapp.model.Sequence</class>
+		<class>com.omdp.webapp.model.TBusiInfo</class>
+		<class>com.omdp.webapp.model.TCustInfo</class>
+		<class>com.omdp.webapp.model.TCustLinkman</class>
+		<class>com.omdp.webapp.model.TDeptInfo</class>
+		<class>com.omdp.webapp.model.TDeptRole</class>
+		<class>com.omdp.webapp.model.TOrderDetail</class>
+		<class>com.omdp.webapp.model.TOrderInfo</class>
+		<class>com.omdp.webapp.model.TOrderInfoHis</class>
+		<class>com.omdp.webapp.model.TOrderLog</class>
+		<class>com.omdp.webapp.model.TRoleInfo</class>
+		<class>com.omdp.webapp.model.TRoleRes</class>
+		<class>com.omdp.webapp.model.TSendProduct</class>
+		<class>com.omdp.webapp.model.TSysParam</class>
+		<class>com.omdp.webapp.model.TSysRes</class>
+		<class>com.omdp.webapp.model.TUser</class>
+		<class>com.omdp.webapp.model.TUserLogin</class>
+		<class>com.omdp.webapp.model.TUserRole</class>
+		<class>com.omdp.webapp.model.TBulletinInfo</class>
+		<class>com.omdp.webapp.model.TBulletinPub</class>
+		<class>com.omdp.webapp.model.TStakeHolder</class>
+		<class>com.omdp.webapp.model.TTradInfo</class>
+		<class>com.omdp.webapp.model.TTradDetail</class>
+		
+		<class>com.omdp.webapp.model.TContractInfo</class>
+		<class>com.omdp.webapp.model.TContractItem</class>
+  		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect" />
+			<property name="hibernate.cache.provider_class" value="org.hibernate.cache.EhCacheProvider" />    			
+    		<property name="hibernate.cache.use_query_cache" value="true" />    			
+    		<property name="hibernate.format_sql" value="false" />
+    		<property name="hibernate.show_sql" value="false"/>
+	  	</properties>
+	</persistence-unit>
+  
+</persistence>

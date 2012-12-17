@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+    http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd"
+	default-lazy-init="true">
+	
+	<context:annotation-config/>
+	
+	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
+	
+	<!-- 使用annotation定义事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<!-- aop事务设置 -->
+	<aop:config>
+		<aop:advisor pointcut="execution(* *..service.impl.*(..))" advice-ref="txAdvice"/>
+	</aop:config>
+	
+	<!-- advice定义-->
+	<tx:advice id="txAdvice">
+		<tx:attributes>
+			<tx:method name="get*" read-only="true" />
+			<tx:method name="find*" read-only="true" />
+			<tx:method name="query*" read-only="true" />
+
+			<tx:method name="save*" propagation="REQUIRED" rollback-for="Exception" />
+			<tx:method name="update*" propagation="REQUIRED" rollback-for="Exception" />
+			<tx:method name="del*" propagation="REQUIRED" rollback-for="Exception" />
+			<tx:method name="*" propagation="REQUIRED" rollback-for="Exception" />
+		</tx:attributes>
+	</tx:advice>
+	
+	<context:component-scan base-package="com.omdp.webapp"></context:component-scan>
+	
+	<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
+    
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+    	<property name="driverClass">
+    	<value>com.mysql.jdbc.Driver</value>
+    	</property>
+    	<property name="jdbcUrl">
+    	<value>jdbc:mysql://127.0.0.1:3306/omdp</value>
+    	</property>
+    	<property name="user">
+    	<value>root</value>
+    	</property>
+    	<property name="password">
+    	<value>pwdadmin</value>
+    	</property>
+    	
+    	<property name="maxIdleTime"><value>1800000</value></property>
+    	<property name="maxPoolSize"><value>12</value></property>
+    	<property name="checkoutTimeout"><value>120000</value></property>
+    </bean>
+    
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+                <property name="database" value="MYSQL" />
+                <property name="showSql" value="false" />
+            </bean>
+        </property>
+    </bean>
+   
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+    
+    <bean id="userManagerService" class="com.omdp.webapp.sys.user.service.impl.UserManagerServiceImpl"></bean>
+    <bean id="newOrderService" class="com.omdp.webapp.order.service.impl.NewOrderServiceImpl"></bean>
+    <bean id="orderQueryService" class="com.omdp.webapp.order.service.impl.OrderQueryServiceImpl"></bean>
+    <bean id="userLoginLogService" class="com.omdp.webapp.sys.log.service.impl.UserLoginLogServiceImpl"></bean>
+    <bean id="customerManageService" class="com.omdp.webapp.customer.service.impl.CustomerManageServiceImpl"></bean>
+    <bean id="bulletinService" class="com.omdp.webapp.bulletin.service.impl.BulletinServiceImpl"></bean>
+    <bean id="employeeService" class="com.omdp.webapp.employee.service.impl.EmployeeServiceImpl"></bean>
+    <bean id="resourceService" class="com.omdp.webapp.sys.resource.service.impl.ResourceServiceImpl"></bean>
+    <bean id="sysParamService" class="com.omdp.webapp.sys.params.service.impl.SysParamServiceImpl"></bean>
+    <bean id="deptService" class="com.omdp.webapp.sys.dept.service.impl.DeptServiceImpl"></bean>
+    <bean id="rightService" class="com.omdp.webapp.sys.right.service.impl.RightServiceImpl"></bean>
+    <bean id="busParamService" class="com.omdp.webapp.sys.params.service.impl.BusParamServiceImpl"></bean>
+    <bean id="backupService" class="com.omdp.webapp.sys.backup.service.impl.BackupServiceImpl"></bean>
+    <bean id="deliverService" class="com.omdp.webapp.deliver.service.impl.DeliverServiceImpl"></bean>
+    <bean id="customerBusiStatService" class="com.omdp.webapp.stat.service.impl.CustomerBusiStatServiceImpl"></bean>
+    <bean id="tradService" class="com.omdp.webapp.finance.service.impl.TradServiceImpl"></bean>
+    <bean id="indexService" class="com.omdp.webapp.sys.index.service.impl.IndexServcieImpl"></bean>
+    <bean id="contractService" class="com.omdp.webapp.contract.service.impl.ContractServiceImpl"></bean>
+    
+    
+    <!-- login success event listener -->
+	<bean class="com.omdp.webapp.security.LoginSuccessListener"/>   
+	
+	<import resource="classpath:springconfig/**/*.xml" />
+</beans>

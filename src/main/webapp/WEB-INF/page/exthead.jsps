@@ -1,0 +1,9 @@
+<link rel="stylesheet" type="text/css" href="<%=path%>/pub/resources/css/i2.css" /> 
+<link rel="stylesheet" type="text/css" href="<%=path%>/pub/resources/libs/extjs3/resources/css/ext-all.css" /> 
+<link rel="stylesheet" type="text/css" href="<%=path%>/pub/resources/libs/extjs3/resources/css/xtheme-gray.css" /> 
+<script type="text/javascript" src="<%=path%>/pub/resources/libs/extjs3/ext-base.js"></script> 
+<script type="text/javascript" src="<%=path%>/pub/resources/libs/extjs3/ext-all.js"></script> 
+<script type="text/javascript" src="<%=path%>/pub/resources/libs/extjs3/ext-lang-zh_CN.js"></script> 
+<script type="text/javascript">
+Ext.BLANK_IMAGE_URL = '<%=path%>/pub/resources/images/s.gif';
+</script>

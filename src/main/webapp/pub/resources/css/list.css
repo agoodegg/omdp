@@ -1,0 +1,113 @@
+.content_line{
+	cursor:hand;
+}
+.content_line td{
+	background:#FFFFFF;
+}
+
+.even_row{
+	background:#CCFFFF;
+}
+
+.even_row td{
+	background:#CCFFFF;
+}
+.mouseOverCls{
+	background:#FFFFBB;
+}
+.mouseOverCls td{
+	background:#FFFFBB;
+}
+.selCls{
+	background:#FFCCCC;
+}
+.selCls td{
+	background:#FFCCCC;
+}
+
+
+
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+.pagination{
+width:100%;
+padding: 2px;
+}
+
+.pagination ul{
+margin: 0;
+padding: 0;
+text-align: right; /*Set to "right" to right align pagination interface*/
+font-size: 12px;
+}
+
+.pagination li{
+list-style-type: none;
+display: inline;
+padding-bottom: 1px;
+}
+
+.pagination li input{
+	font-size: 11px;
+}
+
+.pagination a, .pagination a:visited{
+padding: 0 5px;
+border: 1px solid #9aafe5;
+text-decoration: none;
+color: #2e6ab1;
+}
+
+.pagination a:hover, .pagination a:active{
+border: 1px solid #2b66a5;
+color: #000;
+background-color: lightyellow;
+}
+
+.pagination li.currentpage{
+font-weight: bold;
+padding: 0 5px;
+border: 1px solid navy;
+background-color: #2e6ab1;
+color: #FFF;
+}
+
+.pagination li.disablepage{
+padding: 0 5px;
+border: 1px solid #929292;
+color: #929292;
+}
+
+.pagination li.nextpage{
+font-weight: bold;
+}
+
+* html .pagination li.currentpage, * html .pagination li.disablepage{ /*IE 6 and below. Adjust non linked LIs slightly to account for bugs*/
+margin-right: 5px;
+padding-right: 0;
+}
+
+.queryArea{
+	font-size:13px;
+	color:#0000FF;
+}
+.queryArea table{
+	font-size:13px;
+	color:#6363FF;
+	font-weight:bold;
+}
+.labelField{
+	text-align:right;
+}
+.nodataInfo{
+	width:100%;
+	font-size:12px;
+	text-align:center;
+	color:#ff0000;
+}
+
+.nodataInfo span{
+	text-align:center;
+	color:#ff0000;
+}

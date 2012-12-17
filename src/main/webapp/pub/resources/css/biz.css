@@ -1,0 +1,249 @@
+body{font-family:'lucida Grande','Verdana';background:#efefef;margin:0;text-align:center;_height:100%;position:relative;}
+html{overflow-y:scroll;_height:100%;}
+input,select{font-family:'lucida Grande','Verdana';vertical-align:middle;}
+label{vertical-align:middle;}
+form{padding:0;margin:0;}
+a{color:#1E5494;text-decoration:none;}
+a:link,a:visited{color:#1E5494;text-decoration:none;}
+a:hover{color:#1E5494;text-decoration:underline;}
+p{line-height:22px;}
+h1,h2,h3{font-weight:bold;}
+h3{font-size:14px;}
+h2{font-size:18px;}
+.header{height:75px;margin-bottom:20px;background:#315ca1;border-bottom:1px solid #254f99;}
+/*comm*/
+.icon_loading_b{background:url(../images/bizmail/manage/ico_loading2.gif) no-repeat scroll 0 0;height:32px;width:32px;}
+.icon_finish_b{background:url(../images/bizmail/manage/prompt.gif) no-repeat scroll 0 0;height:32px;width:32px;}
+.icon_finish_m{background:url(../images/bizmail/manage/prompt.gif) no-repeat scroll 0 -32px;height:16px;width:16px;}
+.icon_finish_s{background:url(../images/bizmail/manage/prompt.gif) no-repeat scroll 0 -48px;height:12px;width:12px;}
+.icon_successful{background:url(../images/newicon/prompt.gif) no-repeat scroll -160px 0 transparent;width:31px;}
+.icon_failed{background:url(../images/newicon/prompt.gif) no-repeat scroll -192px 0 transparent;height:31px;width:31px;}
+.icon_info_b{background:url(../images/bizmail/manage/prompt.gif) no-repeat scroll -64px 0;height:32px;width:32px;}
+.icon_error_b{background:url(../images/bizmail/manage/prompt.gif) no-repeat scroll -32px 0;height:32px;width:32px;}
+.icon_error_m{background:url(../images/bizmail/manage/prompt.gif) no-repeat scroll -16px -32px;height:16px;width:16px;}
+.icon_error_s{background:url(../images/bizmail/manage/prompt.gif) no-repeat scroll -12px -48px;height:12px;width:12px;}
+.icon_wait_b{background:url(../images/bizmail/manage/prompt.gif) no-repeat scroll -96px 0;height:32px;width:32px;}
+.icon_caution_b{background:url(../images/bizmail/manage/prompt.gif) no-repeat scroll -64px 0;height:32px;width:32px;}
+.icon_caution_m{background:url(../images/bizmail/manage/prompt.gif) no-repeat scroll -64px -32px;height:16px;width:16px;}
+.icon_caution_s{background:url(../images/bizmail/manage/prompt.gif) no-repeat scroll -24px -48px;height:12px;width:12px;}
+.icon_info_m{background:url(../images/bizmail/manage/prompt.gif) no-repeat scroll -32px -32;height:32px;width:32px;}
+.icon_help_m{background:url(../images/bizmail/manage/prompt.gif) no-repeat scroll -80px -32px;height:16px;width:16px;}
+.icon_help_s{background:url(../images/bizmail/manage/prompt.gif) no-repeat scroll -60px -48px;height:12px;width:12px;}
+.editIcon{background:url(../images/bizmail/manage/icon_action.png) no-repeat scroll -94px 0px;height:16px;width:16px;}
+.wd{margin:0 auto;clear:both;}
+.greentext{color:#42830c}
+
+.txt_red{color:#cc0000;}
+.txt.txt_left{text-align:left!important;}
+.txt_right{text-align:right!important;}
+.txt_center{text-align:center!important;}
+.bd{border:1px solid #DFDFDF}
+.bd_gray{border:1px solid #DFDFDF}
+.bd_t{border-top:1px solid #DFDFDF}
+.bd_b{border-bottom:1px solid #DFDFDF}
+.attbg {background:none repeat scroll 0 0 #D6E2F1;}
+
+.nowrap{white-space:nowrap;}
+.tips{background-color:#68AF02;color:#fff;text-align:center;_position:absolute;position:fixed;top:40%;left:45%;opacity:0.8;filter:alpha(opacity=80);z-index: 10000;line-height:22px;padding:10px 25px;-moz-border-radius:5px;border-radius:5px;-webkit-border-radius:5px;-moz-box-shadow:2px 2px 2px #ccc;}
+.tips img {margin-right:8px;}
+.errmsg,.msg{background-color:orange;color:#fff;text-align:center;_position:absolute;position:fixed;top:40%;left:45%;opacity:0.8;filter:alpha(opacity=80);z-index: 10000;line-height:22px;padding:10px 25px;-moz-border-radius:5px;border-radius:5px;-webkit-border-radius:5px;-moz-box-shadow:2px 2px 2px #ccc;}
+.f_size{font-size:12px!important;}
+.nomail, .noFoundInfo {height:70px;line-height:70px;text-align:center;}
+.logo{}
+.setinfo{color:#fff;height:35px;margin-top:40px;}
+.setinfo a{color:#fff;}
+.setinfo a:hover{color:#fff;}
+.txt_gray,.graytext,.addrtitle{color:#707070;}
+.txt_dark{color:#333;}
+.mainPanel{background:#fff;border:1px solid #d4d4d4;-moz-border-radius:5px;border-radius:5px;-webkit-border-radius:5px;}
+.content{margin:35px;}
+.content .mainColumn{}
+.content h1{font-family:'微软雅黑';font-size:16px;font-weight:bold;line-height:18px;margin:0 0 8px 0;padding-bottom:8px;border-bottom:1px solid #dfdfdf;zoom:1;}
+.leftColumn{margin-right:240px;}
+.leftColumn .dashboardGrid{padding:0 25px 20px 0;margin-right:25px;border-right:1px solid #dfdfdf;zoom:1;}
+.rightColumn{width:240px;}
+.rightColumn h3{font-size:14px;line-height:18px;border-bottom:1px solid #DFDFDF;padding-bottom:8px;margin:0 0 8px 0;*margin:0 0 10px 0;}
+.rightColumn p{margin:0 0 10px 0;line-height:20px;}
+.rightColumn .sidebar .newFeatureInfo,.rightColumn .sidebar .invitePanel{margin-bottom:35px;}
+
+.msgBox{position:relative;line-height:22px;background:#fefff1;border:1px solid #ebd79c;padding:16px 20px 18px;zoom:1;}
+.infobar{background:#fefff1;border:1px solid #ebd79c;}
+.infoBox{background:#EFF4F8;border:1px solid #D3DEEB;padding:10px 15px;}
+.infoBox ul{margin-top:8px;line-height:18px;padding-left:20px;margin:8px 0 0;}
+.infoBox ul li{}
+
+.msgBox a.closeIcon{display:block;position:absolute;top:8px;right:8px;background:#fff;border:1px solid #e0e0e0;height:12px;line-height:12px;width:12px;}
+
+.dashboardIcon{background:url(../images/bizmail/manage/icon_dashboard.png) no-repeat; height:32px; width:32px;margin-top:-3px;*margin-top:-5px;*position:relative;}
+.settingIcon{background-position:4px 2px;}
+.dominIcon{background-position:-28px 2px;}
+.accountIcon{background-position: -60px 2px;}
+.filesIcon{background-position: -92px 2px;}
+.composeIcon{background-position: -124px 2px;}
+.postfixIcon{background-position: -156px 2px;}
+.sysDataIcon{background-position: -188px 2px;}
+.adminManage{background-position: -220px 2px;}
+
+.dashboardPanel{margin-top:40px;width:100%;overflow:hidden;}
+
+.dashboardPanel .dashboardLink{color:#707070;margin-left:40px;}
+.dashboardPanel .dashboardLink h3 {font-size:16px;margin:0 0 8px 0;}
+.dashboardPanel .dashboardLink li a{color:#707070;padding:0 10px 0 0;}
+.dashboardPanel .dashboardLink li a:hover{color:#1E5494;}
+.dashboardPanel .dashboardLink h3 a{}
+.dashboardPanel .dashboardLink ul {margin:0;padding:0;}
+.dashboardPanel .dashboardLink li {margin:0 10px 0 0;float:left;list-style:none;}
+.dashboardPanel .dashboardLink li.last{border-right:none;}
+.footer{height:60px;padding-top:20px;}
+.describeInfo{line-height:20px;}
+.describeInfo p{margin:0;}
+.describeInfo h3{font-size:14px;margin:10px 0;}
+.describeInfo .infoPanel{margin:20px 0 0;}
+
+
+/* 成员组织架构列表 */
+.structManage{}
+
+/*  成员列表 */
+.accountListPanel{margin-left:200px;padding:15px 10px;border-left:1px solid #d2d2d2;_float:right;_margin-left:-1px;}
+.listTable caption{height:28px;line-height:28px;margin-bottom:10px;*padding:0 0 10px 0;text-align:left;}
+.listTable th{text-align:left;font-size:11px;background:#f1f1f1;border-top:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6; font-weight:normal;padding:6px 12px !important;}
+.listTable th.firstTh{border-left:1px solid #d6d6d6;-moz-border-radius-topleft:5px;-moz-border-radius-bottomleft:5px;border-top-left-radius:5px;border-bottom-left-radius:5px;}
+.listTable th.lastTh{border-right:1px solid #d6d6d6;-moz-border-radius-topright:5px;-moz-border-radius-bottomright:5px;border-top-right-radius:5px;border-bottom-right-radius:5px;}
+.listTable tr:hover {background-color:#ebf0f5;!important;}
+.listTable tr.onfocus {background-color:#ebf0f5;!important;}
+.listTable td {overflow:hidden;padding:6px 12px !important;white-space:nowrap;border-bottom:1px solid #e1e1e1;}
+.content_line td{text-align:left;font-size:11px;background:#f1f1f1;border-top:1px solid #d6d6d6;border-bottom:1px solid #d6d6d6; font-weight:normal;padding:6px 12px !important;}
+
+/*  表格样式 */
+.listTable th.W_30{width:30px;}
+.listTable th.W_40{width:40px;}
+.listTable th.W_60{width:60px;}
+.listTable th.W_80{width:80px;}
+.listTable th.W_120{width:120px;}
+.listTable th.W_f{}
+
+/* 头部面包屑 标题 */
+.path{background-color: #f9f9f9;background:url(../images/bizmail/manage/path_bg.gif) -8px repeat-x; height:31px;border-bottom:1px solid #d4d4d4;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px;-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;border-top-left-radius:5px;border-top-right-radiue:5px;}
+.path ul{margin:0;padding:0;}
+.path li{margin:0;padding:0;line-height:31px;float:left;list-style:none;margin-left:-15px;position:relative;}
+
+.path li a{color:#000;background:url(../images/bizmail/manage/path_right_bg.gif) right no-repeat;display:block;*display:inline-block;height:21px;line-height:21px;padding:5px 30px 5px;}
+.path li a:link,.path li a:visited{_color:#000;}
+.path li a:hover{color:#4c4c4c;text-decoration:none;background:url(../images/bizmail/manage/path_hover.gif) right no-repeat;}
+.path li.home{margin-left:0;}
+.path li.home a:hover{-moz-border-radius:3px;border-radius:3px;-webkit-border-radius:3px;}
+.path li.home a{padding-left:35px;}
+.titleInfo{position:relative;background:#eff4f8;height:20px;line-height:20px;padding:15px 0 15px 35px;border-bottom:1px solid #e0e0e0;border-top:1px solid #fff;}
+.titleInfo span.addrtitle{margin-left:20px;}
+.titleInfo h3{font-family:'微软雅黑';margin:0;font-size:20px;}
+.titleInfo table.stepForm{position:absolute;right:25px;top:10px;}
+.titleInfo table.stepForm th{font-weight:normal;text-align:center;width:110px;height:12px;line-height:12px;}
+.titleInfo table.stepForm td{height:8px;line-height:8px;background:#bbb;}
+.titleInfo table.stepForm td.current{background:#6ebb3c;}
+
+
+/*  设置页面 */
+.addr_line{border-bottom:2px solid #d4d4d4;padding-bottom:5px;font-size:14px;font-weight:bold;}
+.settingtd{border-bottom:1px solid #DFDFDF;}
+.settingtd p{line-height:20px;margin:0 0 10px;}
+.settingDiv_l {float:left;margin:0;padding:20px 0 0;text-align:right;width:140px;}
+.settingDiv_r{margin-left:150px;padding:20px 0 20px 10px;}
+.settingDiv_l div{line-height:25px;}
+.settingDiv_r div{line-height:25px;}
+.no_bb {border-bottom:0 none !important;}
+.fn_list{background:#528BCB;}
+.ico_quickup{height:12px;width:12px;background:url(../images/bizmail/manage/icon_action.png) -453px 0  no-repeat;}
+.ico_quickdown{height:12px;width:12px;background:url(../images/bizmail/manage/icon_action.png) -478px  0  no-repeat;}
+.extendmore .ico_quickup{background-position:-427px -20px;height:13px;width:13px;}
+.extendmore .ico_quickdown{background-position:-427px 0;height:13px;width:13px;}
+
+/* 表单 */
+input.txt,textarea.txt{font-size:14px;padding:2px 3px;*padding:4px 3px 0;-moz-border-radius:3px;border-radius:3px;-webkit-border-radius:3px;}
+select.txt{font-size:14px;-moz-border-radius:3px;border-radius:3px;-webkit-border-radius:3px;boder-color:#C3C3C3;}
+.formPanel{padding:20px 0 30px;}
+.formPanel .tr{margin-bottom:10px;line-height:24px;}
+.formPanel label.colum{float:left;text-align:right;width:140px;height:24px;line-height:24px;}
+.formPanel input.txt{width:230px;height:20px;}
+.formPanel .tipsInfo{margin-left: 140px;margin-top: -8px;}
+.middleAlign{vertical-align:middle;}
+.submitColumn{background:#eff4f8;padding:10px 0 10px 35px;overflow:hidden;zoom:1;border-top:1px solid #e0e0e0;-moz-border-radius-bottomleft:5px;-moz-border-radius-bottomright:5px;-webkit-border-bottom-left-radius:5px;-webkit-border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-bottom-right-radius:5px;}
+.submitColumn .cancelLink a{font-size:14px;margin-left:15px;line-height:28px;}
+.submitColumn .cancelLink{}
+
+/*  按钮 */
+a.btn{display:inline-block;position:relative;color:#000;font-size:12px;}
+a:hover.btn{text-decoration:none;}
+a.btn,input.btn{background:url(../images/bizmail/manage/button.png) 0 0 no-repeat;padding-bottom:1px!important;*padding-top:1px;height:22px;line-height:22px;border:none;text-align:center;cursor:pointer;}
+a.btnNormal,input.btnNormal{background-position:0 0;width:80px;}
+a:link.btnNormal,a:active.btnNormal,a:visited.btnNormal{color:#000;}
+a:hover.btnNormal,input:hover.btnNormal{background-position:0 -33px;}
+
+input.disabled:hover,a.disabled:hover{background-position:0 0;cursor:default;}
+[disabled] {color:#a0a0a0;cursor:default;}
+
+a:active.btnNormal,input:active.btnNormal{background-position:0 -66px;}
+a.fourwd,input.fourwd{background-position:0 -100px;width:97px;}
+a:hover.fourwd,input:hover.fourwd{background-position:0 -133px;}
+a:active.fourwd,input:active.fourwd{background-position:0 -166px;}
+a:link.fourwd,a:active.fourwd,a:visited.fourwd{color:#000;}
+a.sixwd,input.sixwd{background-position:0 -199px;width:108px;}
+a:hover.sixwd,input:hover.sixwd{background-position:0 -233px;}
+a:active.sixwd,input:active.sixwd{background-position:0 -268px;}
+a:link.sixwd,a:active.sixwd,a:visited.sixwd{color:#000;}
+span.btnAdd{background:url(../images/bizmail/manage/icon_action.png) -24px 0 no-repeat;width:16px;height:16px;position:absolute;left:15px;top:4px;}
+span.btnSearch{background:url(../images/bizmail/manage/icon_action.png) -120px 0 no-repeat;width:16px;height:16px;position:absolute;left:15px;top:4px;}
+span.btnUpload{background:url(../images/bizmail/manage/icon_action.png) -50px 0 no-repeat;width:16px;height:16px;position:absolute;left:15px;top:4px;}
+
+input.btnSubmit,a.btnSubmit{background:url(../images/bizmail/manage/button.png) -150px 0 no-repeat;width:89px;height:28px;*height:29px;line-height:28px;color:#fff;font-size:14px;font-weight:bold;padding-bottom:1px!important;*padding-top:1px;border:none;display:inline-block;text-align:center;}
+input.disSubmit,a.disSubmit{background:url(../images/bizmail/manage/button.png)-150px -116px no-repeat;width:89px;height:28px;*height:29px;line-height:28px;color:#fff;font-size:14px;font-weight:bold;padding-bottom:1px!important;*padding-top:1px;border:none;display:inline-block;text-align:center;}
+input:hover.btnSubmit,a:hover.btnSubmit{background-position:-150px -39px;}  
+input:active.btnSubmit{background-position:-150px -78px;}
+
+input.btnSubmit2,a.btnSubmit2{background:url(../images/bizmail/manage/button.png) -150px -155px no-repeat;width:120px;height:28px;*height:29px;line-height:28px;color:#fff;font-size:14px;font-weight:bold;padding-bottom:1px!important;*padding-top:1px;border:none;display:inline-block;text-align:center;}
+a:link.btnSubmit2,a:active.btnSubmit2,,a:visited.btnSubmit2{color:#fff;}
+input:hover.btnSubmit2,a:hover.btnSubmit2{background-position:-150px -194px;text-decoration:none;}
+input:active.btnSubmit2,a:active.btnSubmit2{background-position:-150px -233px;}
+
+/*  组织架构 */
+.treeview, .treeview ul {padding: 0;margin: 0;list-style: none;line-height:22px;}
+.treeview .icon {background:url(../images/bizmail/manage/treeview-bg.gif) 0 0 no-repeat;height: 16px;width: 16px;margin-left: -16px;float: left;cursor: pointer;display:block;zoom:1;_position:relative;}
+.treeview li.closed .icon {background-position:-16px 0;}
+.treeview li .line {height:22px;white-space:nowrap;}
+.treeview li ins{text-decoration:none;}
+.treeview li span.name a{padding:0 4px}
+.treeview li a:hover{text-decoration:none;}
+.treeview li {margin: 0;padding: 0;padding-left: 16px;line-height:22px;}
+.treeview li { background: url(../images/bizmail/manage/treeview-leaf-line.gif) 0 0 no-repeat; }
+.treeview li.closed, .treeview li.open { background: url(../images/bizmail/manage/treeview-bg.gif) -32px 0 repeat-y; }
+.treeview li.last { background: url(../images/bizmail/manage/treeview-leaf-line.gif) -16px -32px no-repeat;}
+.treeview li.closed ul {display:none;}
+.treeview li .selected {background:#1E5494;color:#fff;}
+.treeview li.open .folder { background: url(../images/bizmail/manage/folder.gif) 0 0 no-repeat; padding-left:16px;}
+.treeview li.closed .folder,.treeview li.leaf .folder { background: url(../images/bizmail/manage/folder-closed.gif) 0 0 no-repeat;padding-left:16px; zoom:1;}
+.treeview li.root { background: none;}
+
+.structList {line-height:22px;padding-top:5px;}
+.structList div{border-bottom:1px solid #ccc;padding-left:10px;}
+/* 通用绿色按钮 */
+.button_green_f, a.button_green_f:link, a.button_green_f:visited {display:block; height:27px;  border:none; padding:0 0 0 15px; margin:0; line-height:25px; text-align:center; background:#609b2a url(../images/bizmail/manage/forwindow.png) no-repeat 0 -32px; color:#fff;}
+.button_green_f .inner {height:28px; cursor:pointer; float:left; line-height:27px; padding:0 15px 0 0; background:url(../images/bizmail/manage/forwindow.png) no-repeat right -96px; }
+a.button_green_f:hover {color:#fff;text-decoration:none; background-position:0 0; background-color:#6b9f40;}
+a.button_green_f:hover .inner {background-position:right -64px;}
+a.button_green_f:active {background-position:0 -255px;}
+a.button_green_f:active .inner {background-position:right -287px;}
+
+/*  弹出框 */
+.opp_obj{font-size:14px;position:absolute;top:40%;left:50%;margin-left:-225px;text-align:left;-moz-border-radius:3px;border-radius:3px;-webkit-border-radius:3px;*border-right:2px solid #a0a0a0;*border-bottom:2px solid #a0a0a0;}
+.o_body{-moz-border-radius:3px;border-radius:3px;-webkit-border-radius:3px;-moz-box-shadow:2px 2px 10px #666;}
+.o_body .ico_close{height:12px;width:12px;cursor:pointer;margin:-20px 8px 0 0;border:1px solid #A7190F;background:#DC4835 url(../images/bizmail/manage/ico_closetip.gif) no-repeat;float:right;}
+.o_con{border:1px solid #fff;background:#f0f0f0;}
+.o_con .mainColumn{padding:15px 30px 0;}
+.o_con .mainColumn p{line-height:22px;margin:0;}
+.btnColumn{padding:10px 100px 15px;}
+.o_title{background:#317aef;color:#fff;display:block;padding:5px 10px;font-size:12px;-moz-border-radius-topleft:3px;-moz-border-radius-topright:3px;border--top-left-radius:3px;border--top-right-radius:3px;-webkit-border-top-left-radius:3px;-webkit-border-top-right-radius:3px;}
+.detail_mask{background:#000;opacity:0.3;filter:alpha(opacity=30);width:100%;height:100%;top:0;left:0;bottom:0;_overflow-y:hidden;position:absolute;display:block;zoom:1;}
+/*  日期 */
+.calendar{border:1px solid #ddd!important;}
+.calendar .forbid{border:none!important;padding:2px 4px!important;background:#fff!important;color:#A0A0A0;cursor:default;}
+.calendar .title_year {border-width:0 0 1px;padding:4px 0;text-align:center;width:100%;border-bottom:1px solid #8BA7CC;}

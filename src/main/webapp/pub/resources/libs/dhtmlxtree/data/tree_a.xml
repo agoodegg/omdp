@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tree id="0">
+	<item text="深圳欧美数码印务管理系统V1.0" im0="home.gif" im1="home.gif" im2="home.gif" id="system_root" open="1" call="1" select="1">
+		<item text="订单管理" id="order" >
+			<item text="增加新订单" id="neworder"><userdata name="src">/order/newOrder/toNewOrder.htm</userdata></item>
+			<item text="订单查询" id="orderquery"><userdata name="src">/order/orderQuery/queryAll.htm</userdata></item>
+			<item text="未完成订单" id="unfinish"><userdata name="src">/order/orderQuery/queryUnfinish.htm</userdata></item>
+			<item text="已完成订单" id="doneorder"><userdata name="src">/order/orderQuery/queryDone.htm</userdata></item>
+			<item text="已作废订单" id="trashorder"><userdata name="src">/order/orderQuery/queryTrash.htm</userdata></item>
+		</item>
+		<item text="送货单管理" id="send_order" >
+			<item text="送货单查询" id="send_order_query"><userdata name="src">/deliver/deliverQuery/queryAll.htm</userdata></item>
+			<item text="待处理送货单" id="todo_send_order"><userdata name="src">/deliver/deliverQuery/queryTodo.htm</userdata></item>
+			<item text="客户已签收送货单" id="done_send_order"><userdata name="src">/deliver/deliverQuery/queryDone.htm</userdata></item>
+		</item>
+		<item text="物资管理" id="equipment_material" >
+			<item text="固定资产管理" id="equipment"><userdata name="src">/property/equipment/equipmentList.htm</userdata></item>
+			<item text="物料管理" id="material"><userdata name="src">/property/material/materialList.htm</userdata></item>
+		</item>
+		<item text="财务及帐务处理" id="financial" im0="money.gif" im1="money.gif" im2="money.gif">
+			<item text="订单结算" id="ddjs" ></item>
+			<item text="订单结算记录" id="ddjsjl" ></item>
+			<item text="记账结算记录" id="jzjsjl" ></item>
+			<item text="预付款结算记录" id="yfkjsjl" ></item>
+			<item text="所有类型结算记录" id="sylxjsjl" ></item>
+			<item text="现金收款记录" id="xjskjl" ></item>
+			<item text="营帐统计" id="yztj" ></item>
+			<item text="客户对账单" id="khdzd" ></item>
+			<item text="客户对账单明细" id="khdzdmx" ></item>
+			<item text="客户账户调整" id="khzhtz" ></item>
+			<item text="客户账户变更记录" id="khzhbgjl" ></item>
+		</item>
+		<item text="统计与查询" id="statics" open="1" >
+			<item text="业务员业绩统计" id="busi_statics" >
+				<item text="我的客户业务量" id="myachieve" ><userdata name="src">/custbusistat/consumption/toConsumption.htm</userdata></item>
+				<item text="按业务员统计" id="employstatics" ><userdata name="src">/custbusistat/consumption/toConsumption.htm</userdata></item>
+			</item>
+			<item text="客户业务查询统计" id="cust_busi_statics" >
+				<item text="客户消费统计" id="consumption_stat" ><userdata name="src">/custbusistat/consumption/toConsumption.htm</userdata></item>
+				<item text="按业务类别统计" id="cust_busi_type_stat" ><userdata name="src">/custbusistat/consumption/toConsumption.htm</userdata></item>
+				<item text="按结算方式统计" id="pay_type_stat" ><userdata name="src">/custbusistat/consumption/toConsumption.htm</userdata></item>
+				<item text="按客户名称统计" id="cust_per_stat" ><userdata name="src">/custbusistat/consumption/toConsumption.htm</userdata></item>
+			</item>
+			<item text="产品分类统计" id="prod_type_statics" >
+				<item text="产品统计" id="prod_stat" ><userdata name="src">/custbusistat/consumption/toConsumption.htm</userdata></item>
+				<item text="产品统计设置" id="prod_stat_setting" ><userdata name="src">/custbusistat/consumption/toConsumption.htm</userdata></item>
+			</item>
+		</item>
+		<item text="客户管理" id="customer">
+			<item text="我的客户" id="my_customer"><userdata name="src">/customer/customerManage/queryCustomer.htm</userdata></item>
+			<item text="增加新客户" id="add_customer"><userdata name="src">/customer/customerManage/toNewCust.htm</userdata></item>
+			<item text="存量客户管理" id="pr"><userdata name="src">/customer/customerManage/queryOldCust.htm</userdata></item>
+		</item>
+		<item text="公告管理" id="bulletin_manage" im0="uses.gif" im1="uses.gif" im2="uses.gif">
+			<item text="公告查询" id="bulletin_info" im0="employee.gif" im1="uses.gif" im2="uses.gif"><userdata name="src">/bulletin/bulletinManage/queryBulletin.htm</userdata></item>
+			<item text="公告发布" id="new_bulletin" im0="dept.gif" im1="dept.gif" im2="dept.gif"><userdata name="src">/bulletin/bulletinManage/toAddBulletin.htm</userdata></item>
+		</item>
+		<item text="系统管理" id="system_manage"  im0="system.gif" im1="system.gif" im2="system.gif">
+			<item text="员工管理" id="employee_manage" im0="employee.gif" im1="uses.gif" im2="uses.gif"><userdata name="src">/sys/employeeManage/queryEmployee.htm</userdata></item>
+			<item text="部门管理" id="dept_mamage" im0="dept.gif" im1="dept.gif" im2="dept.gif"><userdata name="src">/sys/deptManage/queryDept.htm</userdata></item>
+			<item text="角色管理" id="right_manage" im0="role.gif" im1="role.gif" im2="role.gif"><userdata name="src">/sys/roleManage/queryRole.htm</userdata></item>
+			<item text="资源管理" id="sys_res_manage" ><userdata name="src">/sys/sysres/toResources.htm</userdata></item>
+			<item text="业务参数管理" id="business_params_manage" ><userdata name="src">/sys/busiParamsManage/toBusiParams.htm</userdata></item>
+			<item text="系统参数设置" id="sys_params" ><userdata name="src">/sys/sysParamsManage/toSysParams.htm</userdata></item>
+			<item text="业务数据管理" id="busi_data_manage" ><userdata name="src">/sys/busiDataManage/toBusiData.htm</userdata></item>
+			<item text="数据备份" id="data_backup" ><userdata name="src">/sys/dataBackup/toDataBackup.htm</userdata></item>
+			<item text="用户登录日志" id="login_log" im0="dept.gif" im1="dept.gif" im2="dept.gif"><userdata name="src">/sys/syslog/queryLogin.htm</userdata></item>
+			<item text="系统操作日志" id="opr_log" im0="dept.gif" im1="dept.gif" im2="dept.gif"><userdata name="src">/sys/syslog/queryAllLog.htm</userdata></item>
+		</item>
+		<item text="帐号与密码" id="password_account">
+			<item text="修改密码" id="edit_password"><userdata name="src">/sys/user/toPassword.htm</userdata></item>
+			<item text="修改登录帐号" id="edit_user_account"><userdata name="src">/sys/user/toAccount.htm</userdata></item>
+		</item>
+		<item text=".关于." id="sys_about_info" im0="about.gif" im1="about.gif" im2="about.gif"></item>
+		<item text="退出系统" id="quit" im0="quit.gif" im1="quit.gif" im2="quit.gif"></item>
+	</item>
+</tree> 
